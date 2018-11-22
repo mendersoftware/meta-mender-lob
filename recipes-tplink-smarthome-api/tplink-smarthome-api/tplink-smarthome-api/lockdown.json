@@ -1,0 +1,20 @@
+{
+  "commander": {
+    "2.19.0": "*"
+  },
+  "lodash.defaultto": {
+    "4.14.0": "*"
+  },
+  "lodash.groupby": {
+    "4.6.0": "*"
+  },
+  "lodash.isequal": {
+    "4.5.0": "*"
+  },
+  "loglevel": {
+    "1.6.1": "*"
+  },
+  "tplink-smarthome-crypto": {
+    "1.0.0": "*"
+  }
+}
