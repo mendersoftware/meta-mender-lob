@@ -1,0 +1,26 @@
+From c39934c2c79ea5c5dc7d61f23d9322f30d79ce4b Mon Sep 17 00:00:00 2001
+From: root <root@marcin-build.c.developers-build-hub.internal>
+Date: Thu, 22 Nov 2018 21:32:25 +0000
+Subject: [PATCH] Change the parse parameters variable size
+
+---
+ src/main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/main.cpp b/src/main.cpp
+index 2a27c66..28eca64 100644
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -581,7 +581,7 @@ finish_him:
+
+ int parseArguments(int argc, const char **argv, CCCommand *cmd, int *arg, char *args, size_t argsLen,
+                    CCOptionValue options[]) {
+-    char c;
++    int c;
+     char *serial = NULL;
+
+     poptContext optCon;
+-- 
+2.7.4
+
+
