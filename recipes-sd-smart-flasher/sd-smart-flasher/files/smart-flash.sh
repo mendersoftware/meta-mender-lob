@@ -1,11 +1,24 @@
 #!/bin/bash
 
-# How this works:
+# How this script works:
 # * first we need to discover the smart plug we are using and switch the power off
 # * once the device is off we need to discover sd-mux(es) 
 # * having the sd-mux device we need to replace the content of the sd-card
 # * once everything above is done we are plugging the tested board on 
 # * we enjoy using the freshly flashed device
+
+if test "$#" -le 2; then
+  echo "smart SD card flasher
+
+usage $0 <smart-plug-mac> <path-to-sd-image> [<sd-mux-serial>]
+
+smart-plug-mac 	  - MAC address of the smart power switch
+path-to-sd-image  - path to the image that the SD 
+sd-mux-serial 	  - serial name of the sd-mux device 
+" 
+
+  exit 1
+fi
 
 PLUG_MAC_ADDR=$1
 SD_IMAGE=$2
